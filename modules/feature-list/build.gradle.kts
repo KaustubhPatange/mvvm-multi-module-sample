@@ -12,7 +12,7 @@ plugins {
 android {
   buildFeatures.buildConfig = true
   defaultConfig {
-    buildConfigField("String", "NewsApiKey", gradleLocalProperties(rootDir).getProperty("newsApiKey"))
+    buildConfigField("String", "NewsApiKey", "\"${gradleLocalProperties(rootDir).getProperty("newsApiKey")}\"")
   }
 }
 

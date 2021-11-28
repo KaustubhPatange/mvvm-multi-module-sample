@@ -44,7 +44,7 @@ jobs:
         run: |
           # Create local.properties
 
-          echo newsApiKey="${{ secrets.NEWS_API_KEY }}" >> local.properties
+          echo newsApiKey=${{ secrets.NEWS_API_KEY }} >> local.properties
 
           ./gradlew app:assembleDebug --stacktrace
 

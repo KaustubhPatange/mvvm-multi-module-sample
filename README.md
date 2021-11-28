@@ -9,7 +9,7 @@ Sample code to demonstrate multi-module navigation with some experimental gradle
 - Get an API Key from https://newsapi.org/ & add it in the `local.properties` file,
 
 ```
-newsApiKey="API_KEY"
+newsApiKey=API_KEY
 ```
 
 or grab an apk from the latest [release](https://github.com/KaustubhPatange/mvvm-multi-module-sample/releases/latest).
