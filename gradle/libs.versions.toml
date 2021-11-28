@@ -1,0 +1,50 @@
+[versions]
+kotlin = "1.5.31"
+agp = "7.2.0-alpha03"
+coroutines = "1.4.0"
+hilt = "2.39.1"
+room = "2.3.0"
+autoBindings = "1.1-beta05"
+retrofit = "2.9.0"
+epoxy = "4.6.3"
+lifecycle = "2.3.1"
+
+[libraries]
+androidCore = "androidx.core:core-ktx:1.7.0"
+androidAppCompat = "androidx.appcompat:appcompat:1.4.0"
+androidMaterial = "com.google.android.material:material:1.4.0"
+constaintLayout = "androidx.constraintlayout:constraintlayout:2.1.2"
+swipeRefreshLayout = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+activityKtx = "androidx.activity:activity-ktx:1.4.0"
+fragmentKtx = "androidx.fragment:fragment-ktx:1.3.1"
+lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+liveDataExtensions = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+lifecycleViewModel = { module = "androidx.lifecycle:lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
+junit = "junit:junit:4.13.2"
+androidJunit = "androidx.test.ext:junit:1.1.3"
+expresso = "androidx.test.espresso:espresso-core:3.4.0"
+androidGradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+navigator = "io.github.kaustubhpatange:navigator:0.1-alpha35"
+navigatorExtensions = "io.github.kaustubhpatange:navigator-extensions:0.7"
+coroutinesAndroid = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+hiltAndroid = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hiltCompiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+hiltGradlePlugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hilt" }
+roomKtx = { module = "androidx.room:room-ktx", version.ref = "room" }
+roomCompiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+autoBindingsRoom = { module = "io.github.kaustubhpatange:autobindings-room", version.ref = "autoBindings" }
+autoBindingsRoomNoOp = { module = "io.github.kaustubhpatange:autobindings-room-noop", version.ref = "autoBindings" }
+autoBindingsCompiler = { module = "io.github.kaustubhpatange:autobindings-compiler", version.ref = "autoBindings" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofitConverterMoshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+paging2 = "androidx.paging:paging-runtime-ktx:2.1.2"
+epoxyCore = { module = "com.airbnb.android:epoxy", version.ref = "epoxy" }
+epoxyPaging = { module = "com.airbnb.android:epoxy-paging", version.ref = "epoxy" }
+epoxyCompiler = { module = "com.airbnb.android:epoxy-processor", version.ref = "epoxy" }
+glide = "com.github.bumptech.glide:glide:4.12.0"
+
+[bundles]
+android = ["androidCore","androidAppCompat","androidMaterial","lifecycle","lifecycleViewModel","liveDataExtensions","activityKtx","fragmentKtx"]
+unitTests = ["junit"]
+androidTests = ["androidJunit","expresso"]
